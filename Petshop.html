@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Botas</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body {
+            background-size: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 20px;
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        header img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 20px orange;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+    .logo {
+        margin-right: 40px;
+    }
+
+        h1 {
+            /* fon */
+            font-size: 150px;
+            color: orange
+        }
+
+        h2 {
+            color: black;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        .qms {
+            color: black;
+        }
+
+        table, th, td {
+            border:1px solid orange;
+            color: black;
+        }
+
+        .marcas {
+            color: black;
+        }
+
+        footer img {
+            width: 100px;
+            height: 100px;
+            padding-top: 50px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        footer a {
+            margin: 50px;
+            text-align: center;
+        }
+
+        footer p {
+            padding-top: 100px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+            color: black;
+        }
+
+        nav {
+            background: orange;
+        }
+
+        .box {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cabecalho {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .produto {
+            border: 10px solid orange;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 10px;
+        }
+
+         .produto-img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 35px; 
+         }
+
+         .produto-img-items {
+            height: 450px;
+         }
+         
+         .produto-marca {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 180px;
+         }
+         
+         .produto-preco {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 300px;
+         }
+
+         .introducao {
+            font-size: larger;
+            align-items: center;
+            position: relative;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            width: 205px;
+            height: 30px;
+            border-radius: 10%;
+            background: orange;
+         }
+
+         .introducao-loja {
+            font-size: larger;
+            align-items: center;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 330px;
+            height: 30px;
+            border-radius: 10%;
+            background: orange;
+         }
+
+         .introducao-loja-produtos {
+            font-size: larger;
+            align-items: center;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 380px;
+            height: 30px;
+            border-radius: 10%;
+            background: orange;
+         }
+
+         .qms {
+            color: black;
+            font-size: medium;
+         }
+
+         .atuando {
+            color: black;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+         }
+
+         .atuando-equipe {
+            color: black;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+         }
+
+         .membros {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 30px;
+            padding-bottom: 30px;
+         }
+
+         .membros {
+            display: flex;
+            flex-direction: row;
+            border: 10px solid orange;
+            margin-top: 20px;
+            margin-bottom: 10px;
+         }
+
+         .membros-items {
+            height: 300px;
+            justify-content: space-around;
+            padding: 45px;
+         }
+         
+        </style>
+    <nav class="cabecalho">
+                <a class="itens-cabecalho" href="index.html">Loja</a>
+                <a class="itens-cabecalho" href="agenda.html">Agenda</a>
+                <a class="itens-cabecalho" href="contato.html">Contato</a>
+    </nav>
+    <header>
+        <div class="center">
+            <h1 class="titulo">Las Botas</h1>
+        <img class="logo" src="icone.jpeg" .>
+        </div>
+            <div class="introducao">
+                <h2>Quem somos?</h2>
+            </div>
+            <div class="atuando">
+                <p>Atuando em prol do melhor lazer e cuidado dos seus pet’s, a Las Botas é um petshop especializado nos mais variados tipos de produtos e atendimento para animais. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="introducao-loja">
+                <h2>Conheça nossa equipe!</h2>
+            </div>
+            <div class="atuando-equipe">
+                <p>Aqui nosso lema é apenas um: botas elegantes, cuidados especializados! E para isso, temos uma equipe recheada de integrantes dos mais diversos tipos. Verifique abaixo o rosto desprentensioso de cada um deles e tenha certeza que sempre será bem-recepcionado na nossa casa! Começando com o El Santista, o cachorrito que nunca desgruda da sua bandana do Santos e é natural da Vila Belmiro. Ele foi resgatado numa ação no litoral de São Paulo e desde então vêm tentando converter muitos outros companheiros pet's em Santistas! Em seguida, temos o trio Folgado, Soneca e Sapeca! Acredite ou não, mas esses três carinhas são irmãos que não se separam em nenhuma situação e são um mais foguento que o outro! E, ei, caso você tenha lido até aqui, saiba que eles também são pet's muito bem educados. Eles são bem assalariados aqui, mas não se preocupe, porque eles também adoram ter uma casa nova. Se sentir interesse em adotá-los, contate nosso Contato! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="membros">
+                <div> 
+                <img class="membros-items" src="Membros/membro1.jpeg">
+                <img class="membros-items" src="Membros/membro2.jpeg">
+                <img class="membros-items" src="Membros/membro3.jpeg">
+                <img class="membros-items" src="Membros/membro4.jpeg">
+                </div>
+                <div>
+                 <h2></h2>
+                 <h2></h2>
+                 <h2></h2>
+                 <h2></h2>
+                </div>
+                </div>
+            <div class="introducao-loja-produtos">
+                <h2>Conheça nossos produtos!</h2>
+            </div>
+        </header>
+        <main>
+            <section class="produto">
+                    <selection class="produto-img">
+                    <img class="produto-img-items" src="produtos/Whiskas.png">
+                    <img class="produto-img-items" src="produtos/Premier500G.png">
+                    <img class="produto-img-items" src="produtos/Magnus1Kg.png">
+                    </selection>
+                    <selection class="produto-marca">
+                        <h2 class="produto-marca-items"><b>Ração Whiskas</b></h2>
+                        <h2 class="produto-marca-items"><b>Ração Premier</b></h2>
+                        <h2 class="produto-marca-items"><b>Ração Magnus</b></h2>
+                    </selection>
+                    <selection class="produto-preco">
+                        <h2 class="produto-preco-item"><b><sup class="precinho">R$</sup> 45,<sub>90</sub></b></h2>
+                        <h2 class="produto-preco-item"><b><sup class="precinho">R$</sup> 32,<sub>90</sub></b></h2>
+                        <h2 class="produto-preco-item"><b><sup class="precinho">R$</sup> 56,<sub>90</sub></b></h2>
+                    </selection>
+                </div>
+                </section>
+            </main>
+        <footer>
+            <a href="https://www.youtube.com/watch?v=Rw3UsEK_3yQ" target="_blank" rel="noopener noreferrer"></a>
+                <img src="Membros/youtube.png"></a></img>
+                <p>Youtube</p>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=Rw3UsEK_3yQ" target="_blank" rel="noopener noreferrer"></a>
+                        <img src="Membros/facebook.png"></a></img>
+                        <p>Facebook</p>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=Rw3UsEK_3yQ" target="_blank" rel="noopener noreferrer"></a>
+                                <img src="Membros/twitter.png"></a></img>
+                                <p>Twitter</p>
+                                            </a>
+             </footer>
+         </body>
+    </html>

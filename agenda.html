@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 20px;
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        nav {
+            background: orange;
+        }
+
+        h1 {
+            /* fon */
+            font-size: 50px;
+            color: orange
+        }
+
+        header img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 20px orange;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .cabecalho {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .logo {
+        margin-right: 40px;
+        }
+
+        h1 {
+            /* fon */
+            font-size: 150px;
+            color: orange;
+        }
+
+        h2 {
+            font-size: larger;
+            color: black;
+        }
+        #titulo {
+            font-family: sans-serif;
+            color: black;
+            font-size: 20px;
+            }
+
+        #subtitulo {
+            font-family: sans-serif;
+            color: black;
+        }
+
+        body {
+            background-color: white;
+            font-family: sans-serif;
+            font-size: larger;
+        }
+
+        input, select, textarea, button {
+            border-radius: 5px;
+        }
+
+        #nome {
+            font-size: larger;
+            font-family: sans-serif;
+            width: 350px;
+            height: 25px;
+            border: 1px solid orange;
+            margin-top: 6px;
+            margin-left: 4px;
+            margin-bottom: 10px;
+            box-shadow:3px 3px 3px 3px rgb(128, 128, 128);
+            text-shadow: 1px 1px 1px 1px rgba(0, 0, 0,0.5);
+        }
+
+        #nomepet {
+            font-size: larger;
+            font-family: sans-serif;
+            width: 351px;
+            height: 25px;
+            border: 1px solid orange;
+            margin-top: 6px;
+            margin-left: 4px;
+            margin-bottom: 20px;
+            box-shadow:3px 3px 3px 3px rgb(128, 128, 128);
+            text-shadow: 1px 1px 1px 1px rgba(0, 0, 0,0.5);
+        }
+
+        #email {
+            font-size: larger;
+            font-family: sans-serif;
+            width: 350px;
+            height: 25px;
+            border: 1px solid orange;
+            margin-top: 6px;
+            margin-left: 4px;
+            margin-bottom: 10px;
+            box-shadow:3px 3px 3px 3px rgb(128, 128, 128);
+            text-shadow: 1px 1px 1px 1px rgba(0, 0, 0,0.5);
+        }
+        .campo {
+            margin-bottom: 1em;
+        }
+
+        .campo label {
+            margin-bottom: 0.2em;
+            color: black;
+            display: block;
+        }
+
+        fieldset.grupo .campo{
+            float: left;
+            margin-right: 1em;
+        }
+
+        .campo input[type="text"], .campo input[type="email"] {
+            padding: 0.2em;
+            border: 1px solid orange;
+            box-shadow: 2px 2px 2px black;
+            display: block;
+        }
+
+        .campo select {
+            width: 50px;
+            height: 25px;
+            font-size: small;
+            border: 1px solid orange;
+            margin-top: 8px;
+            box-shadow: 2px 2px 2px 2px black;
+            display: block;
+            }
+
+         .campo textarea {
+            font-size: larger;
+            font-family: sans-serif;
+            width: 400px;
+            height: 180px;
+            border: 1px solid orange;
+            margin-top: 10px;
+            box-shadow: 3px 3px 3px 3px rgb(128, 128, 128, 128);
+            display: block;
+        }
+        .campo select option {
+            width: 20px;
+            height: 20px;
+        }
+
+        .campo input:focus, .campo select:focus, .campo textarea:focus {
+            background: white;
+        }
+
+        .button {
+            font-size: larger;
+            background: white;
+            border: 1px solid orange;
+            margin-bottom:1em;
+            color:black;
+            padding: 10px;
+            box-shadow:3px 3px 3px rgb(128, 128, 128);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0,0.5);
+            margin-top: 30px;
+            margin-left: 75px;
+            position: relative;
+            transform: translate(-50%, -50%)
+        }
+
+        .button:hover {
+            box-shadow: inset 2px 2px 2px rgba(0, 0, 0,0.2);
+            text-shadow: none;
+        }
+
+        .cadastro {
+            margin-right: 700px;
+        }
+
+        .cadastro {
+            font-size: 25px;
+            align-items: center;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 300px;
+            height: 35px;
+            border-radius: 10%;
+            background: orange;
+         }
+
+         .cadastro-ag {
+            color: black;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+         }
+
+         
+        </style>
+</head>
+<body>
+    <nav class="cabecalho">
+        <a class="itens-cabecalho" href="Petshop.html">Loja</a>
+        <a class="itens-cabecalho" href="agenda.html">Agenda</a>
+        <a class="itens-cabecalho" href="contato.html">Contato</a>
+    </nav>
+    <header>
+    <div class="center">
+        <h1 class="titulo">Las Botas</h1>
+    <img class="logo" src="icone.jpeg" .>
+    </div>
+    </header>
+    <div class="cadastro">
+        <h2>Cadastro p/ Agenda!</h2>
+        </div>
+        <div class="cadastro-ag">
+        <p>Complete suas informações e as de seu pet abaixo, para que possamos recepcioná-los da melhor forma na nossa loja!</p>
+        <br>
+    </div>
+
+    <form>
+            <div class="campo">
+                <label for="nome"><b>Nome</b></label>
+                <input type="text" name="nome" id="nome">
+                </div>
+                <div class="campo">
+                    <label for="name"><b>Nome do Pet</b></label>
+                    <input type="text" name="nomepet" id="nomepet">
+                </div>
+
+                <div class="campo">
+                    <label for="name"><b>Email</b></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="racapet"><b>Qual a raça do seu pet?</b></label>
+                        <input type="radio" name="racapet" value="frontend" checked><b>Gato</b>
+                        </label>    
+
+                        <label>
+                        <input type="radio" name="racapet" value="frontend"><b>Cachorro</b>
+                        </label>  
+                        </div>   
+
+                        <div class="campo">
+                        <label><b>Irá precisar de transporte?</b></label>
+                        <select id="transporte">
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+
+                        <div class="campo">
+                            <br>
+                            <label><b>Alguma observação para cuidado?</b></label>
+                            <textarea row="50" style:26em name="cuidado" id="cuidado"></textarea>
+                </div>
+                <button class="button" type="submit">Tudo pronto!</button>
+             </form>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            font-family: sans-serif;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 20px;
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        nav {
+            background: orange;
+        }
+
+        h1 {
+            /* fon */
+            font-size: 50px;
+            color: orange
+        }
+        
+        header img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 20px orange;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .cabecalho {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .logo {
+        margin-right: 40px;
+        }
+
+        h1 {
+            /* fon */
+            font-size: 150px;
+            color: orange
+        }
+
+        #nome {
+            font-size: larger;
+            font-family: sans-serif;
+            width: 350px;
+            height: 25px;
+            border: 1px solid orange;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            box-shadow:3px 3px 3px rgb(128, 128, 128);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0,0.5);
+        }
+
+        #nomepet {
+            font-size: larger;
+            font-family: sans-serif;
+            width: 351px;
+            height: 25px;
+            border: 1px solid orange;
+            margin-left: 6px;
+            margin-bottom: 20px;
+            box-shadow:3px 3px 3px rgb(128, 128, 128);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0,0.5);
+        }
+
+        .fcs {
+            font-size: 25px;
+            align-items: center;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 260px;
+            height: 39px;
+            border-radius: 10%;
+            background: orange;
+         }
+
+         .sac {
+            color: black;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+         }
+
+         .campo textarea {
+            font-size: larger;
+            font-family: sans-serif;
+            width: 400px;
+            height: 180px;
+            border: 1px solid orange;
+            margin-top: 10px;
+            box-shadow: 3px 3px 3px 3px rgb(128, 128, 128, 128);
+            display: block;
+        }
+
+        .campo text {
+            height: 20px;
+        }
+
+        .button {
+            font-size: larger;
+            background: white;
+            border: 1px solid orange;
+            margin-bottom:1em;
+            color:black;
+            padding: 10px;
+            box-shadow:3px 3px 3px rgb(128, 128, 128);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0,0.5);
+            margin-top: 50px;
+            margin-left: 65px;
+            position: relative;
+            transform: translate(-50%, -50%)
+        }
+
+        .button:hover {
+            box-shadow: inset 2px 2px 2px rgba(0, 0, 0,0.2);
+            text-shadow: none;
+        }
+</style>
+</head>
+<body>
+    <header>
+    <nav class="cabecalho">
+        <a class="itens-cabecalho" href="Petshop.html">Loja</a>
+        <a class="itens-cabecalho" href="agenda.html">Agenda</a>
+        <a class="itens-cabecalho" href="contato.html">Contato</a>
+    </nav>
+    <div class="center">
+        <h1 class="titulo">Las Botas</h1>
+    <img class="logo" src="icone.jpeg" .>
+    </header>
+    <div class="fcs">
+        <h2>Fale Conosco!</h2>
+        </div>
+        <div class="sac">
+        <p>Está querendo entrar em contato mas não consegue ir ate à loja? Por favor, comunique-se conosco abaixo pela nossa central de atendimento! Estamos sempre à disposição.</p>
+        <br>
+    </div>
+    <div class="campo">
+        <label for="nome"><b>Nome</b></label>
+        <input type="text" name="nome" id="nome">
+        </div>
+        <div class="campo">
+            <label for="nomepet"><b>Email</b></label>
+            <input type="email" name="nomepet" id="nomepet" required>
+        </div>
+        <div class="campo">
+            <label for="cuidado"><b>Mensagem</b></label>
+            <textarea row="50" name="cuidado" id="cuidado"></textarea>
+            </div>
+            <button class="button" type="submit">Tudo pronto!</button>
+    </body>
+</html>
